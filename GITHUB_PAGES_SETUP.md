@@ -19,10 +19,30 @@ git push origin main
 1. Go to your repository on GitHub: `https://github.com/BrickPiGuy/program-development-cycle`
 2. Click **Settings** (gear icon in the top right)
 3. Scroll down to the **Pages** section (on the left sidebar)
-4. Under "Source", select:
+
+#### Choose Your Deployment Method
+
+**Option A: Deploy from Branch (Recommended for this project) ✅**
+- Simplest approach for static HTML/CSS/JS sites
+- No build process needed
+- Deploys directly from your main branch
+- Automatic updates on every push
+
+Steps:
+1. Under "Source", select:
+   - **Deploy from a branch**
+2. Select:
    - **Branch**: `main`
    - **Folder**: `/ (root)`
-5. Click **Save**
+3. Click **Save**
+
+**Option B: GitHub Actions (Advanced)**
+- Better for sites requiring builds, minification, or tests
+- More control over deployment pipeline
+- Slower deployment (runs workflow before publishing)
+- Unnecessary for this project
+
+For this static website, **Option A (Deploy from Branch)** is faster and simpler.
 
 ### Step 3: Access Your Website
 
